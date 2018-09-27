@@ -1,15 +1,15 @@
 import java.util.Scanner;
-
+/* ë¬¸ì¥ì„ ì…ë ¥ ë°›ì•„ 2ê°œ ì´ìƒ ë‚˜ì˜¨ ì•ŒíŒŒë²³ê³¼ íšŸìˆ˜ ì¶œë ¥ (ëŒ€ì†Œë¬¸ì êµ¬ë¶„) */
 public class assignment2_1 {
 	public static void main(String args[])
 	{
-		int cnt[] = new int[26]; // ¼Ò¹®ÀÚ
-		int cnt2[] = new int[26]; // ´ë¹®ÀÚ
+		int cnt[] = new int[26]; // ì†Œë¬¸ì
+		int cnt2[] = new int[26]; // ëŒ€ë¬¸ì
 		
 		Scanner scan = new Scanner(System.in);
 		String str;
 		
-		System.out.print("¹®ÀåÀ» ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ë¬¸ì¥ì„ ì…ë ¥í•˜ì„¸ìš”: ");
 		str = scan.nextLine();
 		
 		for(int i=0; i<str.length(); i++) {
@@ -23,13 +23,13 @@ public class assignment2_1 {
 			}
 		}
 		
-		System.out.println("¼Ò¹®ÀÚ ¹®ÀÚÀÇ ¼ö");
+		System.out.println("ì†Œë¬¸ì ë¬¸ìì˜ ìˆ˜");
 		for(int i = 0; i<26; i++) {
 			if(cnt[i] > 1) {
 				System.out.println((char)(97+i) + " : " + cnt[i]);
 			}
 		}
-		System.out.println("´ë¹®ÀÚ ¹®ÀÚÀÇ ¼ö");
+		System.out.println("ëŒ€ë¬¸ì ë¬¸ìì˜ ìˆ˜");
 		for(int i = 0; i<26; i++) {
 			if(cnt2[i] > 1) {
 				System.out.println((char)(65+i) + " : " + cnt2[i]);
